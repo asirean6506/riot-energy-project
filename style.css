@@ -50,7 +50,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("/assets/images/Hero_Image.jpg");
+  background-image: url("./assets/images/Hero_Image.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
