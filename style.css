@@ -82,6 +82,15 @@ body {
   cursor: pointer;
 }
 
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
 .hero-text button:hover {
   background-color: #6600CC;
   color: white;
