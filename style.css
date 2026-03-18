@@ -163,14 +163,14 @@ img {
 
 .about {
     background-color: #7F00FF;
-    height: 700px;
+    height: 600px;
 }
 
 .about-text {
     margin-top: 20px;
     text-align: center;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 25em;
     padding: 10px;
     border: 5px solid white;
     margin: 0;
@@ -178,6 +178,10 @@ img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.about-text h2 {
+    font-size: 2rem;
 }
 
 .contact {
