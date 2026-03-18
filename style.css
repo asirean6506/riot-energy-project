@@ -221,50 +221,70 @@ img {
   box-sizing: border-box;
 }
 
-.contact {
-  padding: 60px 20px;
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 40px 16px;
   display: flex;
   justify-content: center;
 }
 
 .contact-text {
-  width: 100%;
-  max-width: 500px;
-  border: 5px solid white;
+  width: min(100%, 500px);
+  max-width: 100%;
+  border: 3px solid white;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  text-align: center;
-  color: black;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+}
+
+.contact-form label {
+  color: black;
   text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
+  max-width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font: inherit;
 }
 
 .contact-form textarea {
-  min-height: 200px;
+  min-height: 180px;
   resize: vertical;
 }
 
 .contact-form input[type="submit"] {
     cursor: pointer;
     background-color: #7F00FF;
-    color: white;
-    font-family: Iosevka Charon Mono;
+    color:white;
 }
 
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 24px 12px;
+  }
+
+  .contact-text {
+    padding: 16px;
+    border-width: 2px;
+  }
+}
 
 input[type=submit]:hover {
   background-color: #6600CC;
