@@ -15,8 +15,12 @@ p {
 }
 
 .menu {
-  position: sticky;
+    display: fixed;
     top: 0;
+}
+nav {
+  position: sticky;
+  top: 0;
 }
 
 ul {
