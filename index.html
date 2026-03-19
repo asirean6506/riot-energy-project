@@ -17,15 +17,24 @@
     <title>RIOT Energy</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">RIOT Energy</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#flavor-landing">Flavors</a></li>
-            <li><a href="#about-landing">About</a></li>
-            <li><a href="#contact-landing">Contact</a></li>
-        </ul>
-    </nav>
+    <nav>
+        <div class="navbar">
+             <img src="/assets/images/h_logo.png" alt="RIOT Energy logo" class="logo">
+
+        <button class="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#flavors-landing">Flavors</a></li>
+      <li><a href="#about-landing">About</a></li>
+      <li><a href="#contact-landing">Contact</a></li>
+    </ul>
+  </div>
+</nav>
     
     <div class="hero-image">
         <div class="hero-text">
@@ -37,7 +46,7 @@
     </div>
 
     <div id="flavor-landing"></div>
-    <h1 style="text-align: center" style="font-size: 50px">Our Flavors</h1>
+    <h1 style="text-align: center" style="font-size: 100px">Our Flavors</h1>
     <div class="flavors-container">
         <div class="card">
             <h2>Midnight Metal</h2>
@@ -64,6 +73,7 @@
         </div>
     </div>
 
+    <h1 style="text-align: center;">Contact Us</h1>
         <div id="contact-landing"></div>
    <div class="contact-section">
   <div class="contact-text">
@@ -91,5 +101,16 @@
             <a href="#">TikTok</a>
       </div>
     </footer>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
