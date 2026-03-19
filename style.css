@@ -69,8 +69,11 @@ body {
     font-family: Iosevka Charon Mono;
 }
 
+
+
 .hero-image {
-  background-image: url("./assets/images/Hero_Image.png");
+  /* background: url('./assets/images/Hero_Image.png'); */
+  background: url('/assets/images/riot_pulse.gif') center/cover no-repeat;
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,8 +82,8 @@ body {
     flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  
+  height: 100vh; 
+
 }
 
 
