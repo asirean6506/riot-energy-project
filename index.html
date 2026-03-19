@@ -51,28 +51,31 @@
     <div id="flavor-landing"></div>
     <h1 style="text-align: center" style="font-size: 100px">Our Flavors</h1>
     <div class="flavors-container">
-        <div class="card">
+        <div class="card fade-in">
             <h2>Midnight Metal</h2>
-            <h3 class="desc">Descriptors would go here, but I don't have one, so here's a nice placeholder.</h3>
+            <h3 class="desc">Bold blackberry and icy citrus for late-night intensity.</h3>
             <img src="assets/images/midnight_metal.png">
+            <button class="buy-btn">Buy Now</button>
         </div>
-        <div class="card">
+        <div class="card fade-in">
             <h2>Neon Rave</h2>
-            <h3 class="desc">Descriptors would go here, but I don't have one, so here's a nice placeholder.</h3>
+            <h3 class="desc">Bright tropical citrus with an electrifying kick.</h3>
             <img src="assets/images/neon_rave.png">
+            <button class="buy-btn">Buy Now</button>
         </div>
-        <div class="card">
+        <div class="card fade-in">
             <h2>Indie Pulse</h2>
-            <h3 class="desc">Descriptors would go here, but I don't have one, so here's a nice placeholder.</h3>
+            <h3 class="desc">Smooth mango and passionfruit for a steady vibe.</h3>
             <img src="assets/images/indie_pulse.png">
+            <button class="buy-btn">Buy Now</button>
         </div>
     </div>
 
     <div id="about-landing"></div>
-    <div class="about">
+    <div class="about fade-in">
         <div class="about-text">
-            <h1>Who are we?</h1>
-            <p>Built for chaos.<br />
+            <h1 class="fade-in">Who are we?</h1>
+            <p class="fade-in">Built for chaos.<br />
 Engineered for energy.<br />
 
 ⚡ Zero crash  <br />
@@ -120,6 +123,20 @@ Engineered for energy.<br />
   });
 </script>
 
+<script>
+  const fadeElements = document.querySelectorAll(".fade-in");
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  fadeElements.forEach((el) => observer.observe(el));
+</script>
 </body>
 </html>
