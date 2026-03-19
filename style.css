@@ -39,15 +39,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 16px;
+  padding: 12px 20px;
   position: relative;
 }
 
 .logo {
-  height: 40px;
+  height: 55px;
   width: auto;
   display: block;
   flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(127, 0, 255, 0.6));
 }
 
 .nav-links {
@@ -115,7 +116,7 @@ nav {
   }
 
   .logo {
-    height: 32px;
+    height: 36px;
   }
 
   .hamburger {
